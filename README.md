@@ -12,7 +12,7 @@ This repository aims to bridge the gap between theoretical knowledge and practic
 
 1. [Linear regression](1-linear-regression)
    1. [Simple linear regression](1-linear-regression/1-1-simple-linear-regression.ipynb)
-   2. [Multivariate](1-linear-regression/1-2-multivariate-linear-regression.ipynb)
+   2. [Multivariate linear regression](1-linear-regression/1-2-multivariate-linear-regression.ipynb)
 2. [Classification](2-classification)
    1. [Multiclass classification](2-classification/2-1-multiclass-classification.ipynb)
    2. [softmax function and its derivative](2-classification/softmax-function-and-its-derivative.ipynb)
