@@ -52,6 +52,16 @@ This repository aims to bridge the gap between theoretical knowledge and practic
 Contributions are welcome! If you have suggestions, improvements, or new topics to add, feel free to open an issue. Please follow the [contributing guidelines](CONTRIBUTING.md).
 Remember that I am only one person working on this repository 🐱‍👤.
 
+## Main Bibliography
+<a id="1">[1]</a> 
+**Goodfellow, I., Bengio, Y., & Courville, A.** (2016). *Deep Learning*. MIT Press. [URL](http://www.deeplearningbook.org).
+
+<a id="2">[2]</a> 
+**Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J.** (2023). *Dive into Deep Learning*. Cambridge University Press. [URL](https://D2L.ai).
+
+<a id="3">[3]</a> 
+**Deisenroth, M. P., Faisal, A. A., & Ong, C. S.** (2020). *Mathematics for Machine Learning*. Cambridge University Press. [URL](https://mml-book.github.io/).
+
 ---
 If you would like to contact me you can send me an [email](mailto:leofabyano@gmail.com).
 
