@@ -8,6 +8,9 @@
 
 This repository aims to bridge the gap between theoretical knowledge and practical implementation in deep learning. Using PyTorch and other modules such as Autograd, we explore the complexity of different models and algorithms and make them accessible to both students and practitioners.
 
+> [!NOTE]
+> Some formulas in $\LaTeX$ may not render well from Github.
+
 ## Table of Contents
 
 1. [Linear regression](1-linear-regression)
