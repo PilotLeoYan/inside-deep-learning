@@ -16,10 +16,6 @@ This repository aims to bridge the gap between theoretical knowledge and practic
 1. [Linear regression](1-linear-regression)
 2. [Classification](2-classification)
 3. [Multilayer Perceptron](3-multilayer-perceptron)
-   1. [MLP](3-multilayer-perceptron/3-1-mlp.ipynb)
-   2. [gradients and activation functions](3-multilayer-perceptron/gradients-and-activation-functions.ipynb)
-   3. [mlp for classification](3-multilayer-perceptron/mlp-for-classification.ipynb)
-   4. [mlp like pytorch](3-multilayer-perceptron/mlp-like-pytorch.ipynb)
   
 ## Examples
 [📓 1.4 interpretability generalization](1-linear-regression/1-4-interpretability-generalization.ipynb)
