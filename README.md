@@ -6,7 +6,7 @@
   <img src="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2.png?raw=true" alt="MLP image" width=300/>
 </p>
 
-Sometimes the easy concepts of deep learning are difficult to apply. Therefore, this repository tries to bridge the gap between ideas and implementations of deep learning, making it more accessible to everyone. This repository mainly use PyTorch and Jupyter-Notebooks.
+Sometimes the simple concepts of deep learning are difficult to apply, and other important concepts are left out. Therefore, this repository tries to bridge the gap between ideas and implementations and explore research concepts to make them more accessible to everyone. This repository mainly uses PyTorch and Jupyter notebooks.
 
 > [!NOTE]
 > Some formulas in $\LaTeX$ may not render well on Github.
