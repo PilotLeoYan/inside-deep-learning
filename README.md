@@ -6,10 +6,10 @@
   <img src="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2.png?raw=true" alt="MLP image" width=300/>
 </p>
 
-This repository aims to bridge the gap between theoretical knowledge and practical implementation in deep learning. Using PyTorch and other modules such as Autograd, we explore the complexity of different models and algorithms and make them accessible to both students and practitioners.
+Sometimes the easy concepts of deep learning are difficult to apply. Therefore, this repository tries to bridge the gap between ideas and implementations of deep learning, making it more accessible to everyone. This repository mainly use PyTorch and Jupyter-Notebooks.
 
 > [!NOTE]
-> Some formulas in $\LaTeX$ may not render well from Github.
+> Some formulas in $\LaTeX$ may not render well on Github.
 
 ## Table of Contents
 
