@@ -17,22 +17,22 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
 
     Examples:
     >>> import numpy as np
-    >>> from porcentual_error import np_mape
+    >>> from numpy_metrics import np_mape
     >>> a = np.full((3, 3), 2.0)
     >>> np_mape(a, a)
     0.0
     >>> np_mape(a * 0, a)
-    1.0
+    100.0
     >>> np_mape(-a, a)
-    2.0
+    200.0
     >>> np_mape(a, a * 0)
-    2.0
+    200.0
     >>> np_mape(-a, a * 0)
-    2.0
-    >>> b = np.full((3, 3), 2.0)
-    >>> b[0, 0] = 0
-    >>> np_mape(b, a)
-    0.1111111111111111
+    200.0
+    >>> np_mape(a * 0, a * 0)
+    0.0
+    >>> np_mape(-a * 100, a * 100)
+    200.0
     """
     
     # Check if one is a np.ndarray but the other is not
@@ -47,9 +47,9 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
         error_no_zero = np.abs((true_value[~mask_zero] - pred_value[~mask_zero]) / true_value[~mask_zero])
         error_zero = np.abs(pred_value[mask_zero])
         error = (np.sum(error_no_zero) + np.sum(error_zero)) / true_value.size
-        return error.item()
+        return error.item() * 100
 
     # If both are numeric, calculate the error
     if true_value == 0:
         return abs(pred_value)
-    return (true_value - pred_value) / true_value
+    return abs((true_value - pred_value) / true_value) * 100
