@@ -17,7 +17,6 @@ def torch_mape(pred_value: float|torch.Tensor, true_value: float|torch.Tensor) -
         RuntimeError: If true_value and pred_value are torch.Tensors and their shapes do not match.
 
     Examples:
-    >>> import torch
     >>> from torch_metrics import torch_mape
     >>> a = torch.full((3, 3), 2.0)
     >>> torch_mape(a, a)
@@ -44,6 +43,7 @@ def torch_mape(pred_value: float|torch.Tensor, true_value: float|torch.Tensor) -
     if isinstance(true_value, torch.Tensor):
         if true_value.shape != pred_value.shape:
             raise RuntimeError(f'true_value.shape "{true_value.shape}" does not match pred_value.shape "{pred_value.shape}"')
+        
         mask_zero = true_value == 0
         error_no_zero = torch.abs((true_value[~mask_zero] - pred_value[~mask_zero]) / true_value[~mask_zero])
         error_zero = torch.abs(pred_value[mask_zero])

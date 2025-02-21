@@ -16,7 +16,6 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
         RuntimeError: If true_value and pred_value are numpy.ndarray and their shapes do not match.
 
     Examples:
-    >>> import numpy as np
     >>> from numpy_metrics import np_mape
     >>> a = np.full((3, 3), 2.0)
     >>> np_mape(a, a)
@@ -40,9 +39,10 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
         raise TypeError("Both true_value and pred_value must be either np.ndarray or numeric types.")
 
     # If both are arrays, check shape compatibility and calculate error
-    if isinstance(true_value, np.ndarray) and isinstance(pred_value, np.ndarray):
+    if isinstance(true_value, np.ndarray):
         if true_value.shape != pred_value.shape:
             raise RuntimeError(f'true_value.shape "{true_value.shape}" does not match pred_value.shape "{pred_value.shape}"')
+        
         mask_zero = true_value == 0
         error_no_zero = np.abs((true_value[~mask_zero] - pred_value[~mask_zero]) / true_value[~mask_zero])
         error_zero = np.abs(pred_value[mask_zero])
@@ -51,5 +51,5 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
 
     # If both are numeric, calculate the error
     if true_value == 0:
-        return abs(pred_value)
+        return abs(pred_value) * 100
     return abs((true_value - pred_value) / true_value) * 100
