@@ -3,7 +3,11 @@
 ## About
 
 <p align="center">
-  <img src="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2.png?raw=true" alt="MLP image" width=300/>
+  <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2.png?raw=true">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2-light.png?raw=true">
+   <img alt="Multilayer Perceptron image" src="https://github.com/PilotLeoYan/inside-deep-learning/blob/main/images/mlp-2.png?raw=true" width=400>
+  </picture>
 </p>
 
 Sometimes the simple concepts of deep learning are difficult to apply, and other important concepts are left out. Therefore, this repository tries to bridge the gap between ideas and implementations and explore research concepts to make them more accessible to everyone. This repository mainly uses PyTorch and Jupyter notebooks.
