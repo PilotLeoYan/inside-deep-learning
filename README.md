@@ -8,14 +8,14 @@
 
 <p align="center">
 <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="images/inside-deep-learning-logo.png">
-   <img alt="Inside Deep learning logo" src="images/inside-deep-learning-logo.png">
+   <source media="(prefers-color-scheme: dark)" srcset="images/inside-deep-learning-logo.png" width="500">
+   <img alt="Inside Deep learning logo" src="images/inside-deep-learning-logo.png" width="500">
 </picture>
 </p>
 
 This repository is a collection of Jupyer notebooks aimed at exploring the vast field of machine learning. Sometimes it is difficult to find implementations of important concepts or ideas, so here we try to implement and explain those ideas using Markdown and Pytorch. 
 
-This repository is not for beginners, not just for LMs, but for anyone who is curious.
+This repository is not intended for beginners or LMs lovers. Rather, it is a compilation of notes on all possible ML topics, especially DL 🧠.
 
 > [!NOTE]
 > Some formulas in $\LaTeX$ may not render well on Github.
@@ -41,8 +41,8 @@ This repository is not for beginners, not just for LMs, but for anyone who is cu
     + [MLP like PyTorch](3-multilayer-perceptron/mlp-like-pytorch.ipynb)
   
 > [!TIP]
-> The items listed are notebooks that build on the previous ones.
-> The parts that aren't numbered are for math development.
+> The numbered items represent a sequential learning path, with each building upon the knowledge of the preceding ones.
+> Unnumbered items focus on specific concepts that support the broader sections, but are largely self-contained.
 
 ## How to Use
 
