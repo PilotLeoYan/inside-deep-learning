@@ -21,7 +21,7 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 > Some formulas in $\LaTeX$ may not render well on Github.
 
 > [!TIP]
-> All notebooks are supported for Colab.
+> All notebooks are supported for Colab and Jupyter NBViewer.
 
 ## Table of Contents
 
