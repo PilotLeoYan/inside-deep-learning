@@ -67,7 +67,7 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
     <img src="images/ridge-regression-training.gif" width="520"\>
 </p>
 
-## Used hardware
+## Used Hardware
 
 * CPU: AMD A6-9500
 * GPU: Nvidia Geforce RTX 2070-SUPER (8GB VRAM)
@@ -77,6 +77,10 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 
 Contributions are welcome! If you have suggestions, improvements, or new topics to add, feel free to open an issue. Please follow the [contributing guidelines](CONTRIBUTING.md).
 Remember that I am only one person working on this repository.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=PilotLeoYan/inside-deep-learning&type=Date)](https://www.star-history.com/#PilotLeoYan/inside-deep-learning&Date)
 
 ## Main Bibliography
 
