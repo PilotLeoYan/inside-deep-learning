@@ -1,5 +1,5 @@
-![Python Version](https://img.shields.io/badge/python-3.13-blue)
-![PyTorch Version](https://img.shields.io/badge/pytorch-2.6.0-blue)
+![Python Version](https://img.shields.io/badge/python-3.13.5-blue)
+![PyTorch Version](https://img.shields.io/badge/pytorch-2.7.1-blue)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-blue) <br>
 ![Latest commit](https://img.shields.io/github/last-commit/PilotLeoYan/inside-deep-learning)
 ![Number of issues](https://img.shields.io/github/issues/PilotLeoYan/inside-deep-learning?color=green)
@@ -26,23 +26,23 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 ## Table of Contents
 
 1. [Linear regression 📈](1-linear-regression)
-    1. [Simple linear regression](1-linear-regression/1-1-simple-linear-regression.ipynb)
-    2. [Multivariate linear regression](1-linear-regression/1-2-multivariate-linear-regression.ipynb)
-    3. [Weight decay (L2 regularization)](1-linear-regression/1-3-weight-decay.ipynb)
-    4. [Interpretability and Generalization](1-linear-regression/1-4-interpretability-generalization.ipynb)
-    + [Weight decay and Normal equation](1-linear-regression/weight-decay-and-normal-equation.ipynb)
+    1. 🤖 [Simple linear regression](1-linear-regression/1-1-simple-linear-regression.ipynb)
+    2. 🤖 [Multivariate linear regression](1-linear-regression/1-2-multivariate-linear-regression.ipynb)
+    3. 🤖 [Weight decay (L2 regularization)](1-linear-regression/1-3-weight-decay.ipynb)
+    + ➗ [Weight decay and Normal equation](1-linear-regression/weight-decay-and-normal-equation.ipynb)
 2. [Classification 📊](2-classification)
-    1. [Multiclass classfication](2-classification/2-1-multiclass-classification.ipynb)
-    + [Softmax function and its derivative](2-classification/softmax-function-and-its-derivative.ipynb)
+    1. 🤖 [Multiclass classfication](2-classification/2-1-multiclass-classification.ipynb)
+    + ➗ [Softmax function and its derivative](2-classification/softmax-function-and-its-derivative.ipynb)
 3. [Multilayer Perceptron 🧠](3-multilayer-perceptron)
-    1. [Multilayer perceptron (MLP)](3-multilayer-perceptron/3-1-mlp.ipynb)
-    + [Gradients and activation functions](3-multilayer-perceptron/gradients-and-activation-functions.ipynb)
-    + [MLP for classification](3-multilayer-perceptron/mlp-for-classification.ipynb)
-    + [MLP like PyTorch](3-multilayer-perceptron/mlp-like-pytorch.ipynb)
+    1. 🤖 [Multilayer perceptron (MLP)](3-multilayer-perceptron/3-1-mlp.ipynb)
+    + ➗ [Gradients and activation functions](3-multilayer-perceptron/gradients-and-activation-functions.ipynb)
+    + 🔵 [MLP for classification](3-multilayer-perceptron/mlp-for-classification.ipynb)
+    + 🔵 [MLP like PyTorch](3-multilayer-perceptron/mlp-like-pytorch.ipynb)
   
 > [!TIP]
-> The numbered items represent a sequential learning path, with each building upon the knowledge of the preceding ones.
-> Unnumbered items focus on specific concepts that support the broader sections, but are largely self-contained.
+> 🤖 Programming ML models.
+> ➗ Focus on specific concepts, such as mathematics.
+> 🔵 Minor variations on the main topics.
 
 ## How to Use
 
@@ -60,13 +60,6 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
    pip install -r requirements.txt
    ```
 
-## Examples
-
-[Interpretability and Generalization](1-linear-regression/1-4-interpretability-generalization.ipynb)
-<p align="center">
-    <img src="images/ridge-regression-training.gif" width="520"\>
-</p>
-
 ## Used Hardware
 
 * CPU: AMD A6-9500
@@ -77,6 +70,18 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 
 Contributions are welcome! If you have suggestions, improvements, or new topics to add, feel free to open an issue. Please follow the [contributing guidelines](CONTRIBUTING.md).
 Remember that I am only one person working on this repository.
+
+If you find this repo useful, please star (★) this repo or cite using the following bibtex entry:
+```
+@misc{pilotleoyan25idl,
+  title={Inside-Deep-learning},
+  author={Rivera, Leonardo Fabyan Ortega},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished={\url{https://github.com/PilotLeoYan/inside-deep-learning}},
+  year={2025}
+}
+```
 
 ## Star History
 
