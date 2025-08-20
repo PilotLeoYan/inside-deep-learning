@@ -1,5 +1,5 @@
 ![Python Version](https://img.shields.io/badge/python-3.13.5-blue)
-![PyTorch Version](https://img.shields.io/badge/pytorch-2.7.1-blue)
+![PyTorch Version](https://img.shields.io/badge/pytorch-2.8.0+cu129-blue)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-blue) <br>
 ![Latest commit](https://img.shields.io/github/last-commit/PilotLeoYan/inside-deep-learning)
 ![Number of issues](https://img.shields.io/github/issues/PilotLeoYan/inside-deep-learning?color=green)
