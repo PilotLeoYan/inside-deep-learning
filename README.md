@@ -13,7 +13,7 @@
 </picture>
 </p>
 
-This repository is a collection of Jupyer notebooks aimed at exploring the vast field of machine learning. Sometimes it is difficult to find implementations of important concepts or ideas, so here we try to implement and explain those ideas using Markdown and Pytorch. 
+This repository is a collection of Jupyer notebooks aimed at exploring the vast field of machine learning. Sometimes it is difficult to find implementations of important concepts or ideas, so here we try to implement and explain those ideas using Markdown and PyTorch. 
 
 This repository is not intended for beginners or LMs lovers. Rather, it is a compilation of notes on all possible ML topics, especially DL 🧠.
 
@@ -85,7 +85,13 @@ If you find this repo useful, please star (★) this repo or cite using the foll
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=PilotLeoYan/inside-deep-learning&type=Date)](https://www.star-history.com/#PilotLeoYan/inside-deep-learning&Date)
+<a href="https://www.star-history.com/#PilotLeoYan/inside-deep-learning&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=PilotLeoYan/inside-deep-learning&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=PilotLeoYan/inside-deep-learning&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=PilotLeoYan/inside-deep-learning&type=Date" />
+ </picture>
+</a>
 
 ## Main Bibliography
 
