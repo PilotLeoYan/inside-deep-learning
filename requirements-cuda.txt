@@ -1,8 +1,10 @@
---extra-index-url https://download.pytorch.org/whl/cu129
+--extra-index-url https://download.pytorch.org/whl/cu126
 
-torch==2.8.0+cu129
+torch==2.9.0+cu126
 autograd==1.8.0
-matplotlib==3.10.5
-numpy==2.3.2
+matplotlib==3.10.7
+numpy==2.3.4
 requests==2.32.5
-scikit-learn==1.7.1
+scikit-learn==1.7.2
+ipykernel==7.1.0
+jupyter==1.1.1

@@ -50,7 +50,15 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
    ```
    git clone https://github.com/PilotLeoYan/inside-deep-learning.git
    ```
-2.
+2. Create environment: <br>
+  Inside Deep Learning is written in `python=3.14.0`. We recommend using Conda to manage dependencies.
+   ```
+   conda create --name idl -y python=3.14.0
+   conda activate idl
+   pip install --upgrade pip
+   cd inside-deep-learning
+   ```
+3.
    A. Install dependencies with cuda:
    ```
    pip install -r requirements-cuda.txt
@@ -62,7 +70,7 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 
 ## Used Hardware
 
-* CPU: AMD A6-9500
+* CPU: AMD Ryzen 7
 * GPU: Nvidia Geforce RTX 2070-SUPER (8GB VRAM)
 * RAM: 16GB DDR4
 
