@@ -7,4 +7,5 @@ numpy==2.3.4
 requests==2.32.5
 scikit-learn==1.7.2
 ipykernel==7.1.0
+jupyter-book==2.1.0
 jupyter==1.1.1
