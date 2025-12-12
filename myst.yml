@@ -12,7 +12,7 @@ project:
     myst-guide: https://mystmd.org/guide
     jupyter: https://docs.jupyter.org/en/latest
 
-  date: 2025-12-9 # ${BUILD_DATE} 
+  date: 2025-12-09 # ${BUILD_DATE} 
   github: https://github.com/PilotLeoYan/inside-deep-learning
   edit_url: 
   
@@ -66,7 +66,7 @@ site:
     favicon: ./content/figures/favicon.svg # path to your favicon
     style: ./css/custom.css
     logo: ./content/figures/idl-logo.png #path to your logo, shown top left at site
-    folders: false
+    folders: True
     hide_authors: True
 
   actions:
