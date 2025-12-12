@@ -28,7 +28,7 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 > [!TIP]
 > All notebooks are supported for Colab and Jupyter NBViewer.
 
-Recommended references 📚️: @mml-book, @Goodfellow, @zhang2023dive.
+Recommended references 📚️: @mml-book, @Goodfellow, @zhang2023dive, @isl-book, @esl-book.
 
 ## Table of Contents
 
