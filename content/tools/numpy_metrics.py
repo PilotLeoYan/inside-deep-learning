@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float:
     """
     Calculate the Mean Absolute Percentage Error (MAPE) between the true value and the predicted value.
@@ -21,17 +22,16 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
     >>> np_mape(a, a)
     0.0
     >>> np_mape(a * 0, a)
-    100.0
+    1.0
     >>> np_mape(-a, a)
-    200.0
+    2.0
     >>> np_mape(a, a * 0)
-    200.0
+    2.0
     >>> np_mape(-a, a * 0)
-    200.0
+    2.0
     >>> np_mape(a * 0, a * 0)
     0.0
     >>> np_mape(-a * 100, a * 100)
-    200.0
     """
     
     # Check if one is a np.ndarray but the other is not
@@ -47,9 +47,9 @@ def np_mape(pred_value: float|np.ndarray, true_value: float|np.ndarray) -> float
         error_no_zero = np.abs((true_value[~mask_zero] - pred_value[~mask_zero]) / true_value[~mask_zero])
         error_zero = np.abs(pred_value[mask_zero])
         error = (np.sum(error_no_zero) + np.sum(error_zero)) / true_value.size
-        return error.item() * 100
+        return error.item()
 
     # If both are numeric, calculate the error
     if true_value == 0:
-        return abs(pred_value) * 100
-    return abs((true_value - pred_value) / true_value) * 100
+        return abs(pred_value)
+    return abs((true_value - pred_value) / true_value)
