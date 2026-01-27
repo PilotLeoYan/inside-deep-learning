@@ -39,7 +39,6 @@ project:
         - file: content/1-linear-regression/1-2-multivariate-linear-regression.ipynb
         - file: content/1-linear-regression/1-3-multioutput-linear-regression.ipynb
         - file: content/1-linear-regression/1-4-weight-decay.ipynb
-        #- file: content/1-linear-regression/weight-decay-and-normal-equation.ipynb
     - file: content/2-classification/classification.md
       children:
         - file: content/2-classification/2-1-multiclass-classification.ipynb
