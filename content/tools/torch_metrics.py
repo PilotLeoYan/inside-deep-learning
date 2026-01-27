@@ -22,17 +22,16 @@ def torch_mape(pred_value: float|torch.Tensor, true_value: float|torch.Tensor) -
     >>> torch_mape(a, a)
     0.0
     >>> torch_mape(a * 0, a)
-    100.0
+    1.0
     >>> torch_mape(-a, a)
-    200.0
+    2.0
     >>> torch_mape(a, a * 0)
-    200.0
+    2.0
     >>> torch_mape(-a, a * 0)
-    200.0
+    2.0
     >>> torch_mape(a * 0, a * 0)
     0.0
     >>> torch_mape(-a * 100, a * 100)
-    200.0
     """
     
     # Check if one is a torch.Tensor but the other is not
@@ -48,9 +47,9 @@ def torch_mape(pred_value: float|torch.Tensor, true_value: float|torch.Tensor) -
         error_no_zero = torch.abs((true_value[~mask_zero] - pred_value[~mask_zero]) / true_value[~mask_zero])
         error_zero = torch.abs(pred_value[mask_zero])
         error = (torch.sum(error_no_zero) + torch.sum(error_zero)) / true_value.numel()
-        return error.item() * 100
+        return error.item()
 
     # If both are numeric, calculate the error
     if true_value == 0:
-        return abs(pred_value) * 100
-    return abs((true_value - pred_value) / true_value) * 100
+        return abs(pred_value)
+    return abs((true_value - pred_value) / true_value)
