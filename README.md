@@ -1,5 +1,5 @@
-![Python Version](https://img.shields.io/badge/python-3.14.0-blue)
-![PyTorch Version](https://img.shields.io/badge/pytorch-2.9.0+cu126-blue)
+![Python Version](https://img.shields.io/badge/python-3.14.4-blue)
+![PyTorch Version](https://img.shields.io/badge/pytorch-2.12.0+cu126-blue)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-blue)
 ![Latest commit](https://img.shields.io/github/last-commit/PilotLeoYan/inside-deep-learning)
 ![Number of issues](https://img.shields.io/github/issues/PilotLeoYan/inside-deep-learning?color=green)
@@ -13,17 +13,25 @@
 </picture>
 </p>
 
-Inside Deep Learning is a collection of Jupyer notebooks aimed at exploring the vast field of machine learning. Sometimes it is difficult to find implementations of important concepts or ideas, so here we try to implement and explain those ideas using upyter Notebooks and PyTorch.
-
-This repository is not intended for beginners or LMs lovers. Rather, it is a compilation of notes on all possible ML topics, especially DL. 
+**Inside Deep Learning (IDL)**:
+Jupyter notebooks exploring machine learning concepts.
+This repo provides clear PyTorch implementations and explanations from scratch 
+for concepts that are often hard to find.
 
 > [!NOTE]
+> This repository uses [workshop-template](https://github.com/jupyter-book/workshop-template) with [MystMD](https://mystmd.org/guide).
+>
 > [View this repository in your browser](https://pilotleoyan.github.io/inside-deep-learning/)
 
 > [!TIP]
 > All notebooks are supported for Colab and Jupyter NBViewer.
 
 ## Table of Contents
+
+> [!TIP]
+> 🤖 Programming ML models.
+> ➗ Focus on a specific concept, such as mathematics proof.
+> 🔵 Minor variations on the main topics.
 
 1. [Linear regression 📈](content/1-linear-regression/linear-regression.md)
     1. 🤖 [Simple linear regression](content/1-linear-regression/1-1-simple-linear-regression.ipynb)
@@ -38,34 +46,32 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
     + ➗ [Gradients and activation functions](content/3-multilayer-perceptron/gradients-and-activation-functions.ipynb)
     + 🔵 [MLP for classification](content/3-multilayer-perceptron/mlp-for-classification.ipynb)
     + 🔵 [MLP like PyTorch](content/3-multilayer-perceptron/mlp-like-pytorch.ipynb)
-  
-> [!TIP]
-> 🤖 Programming ML models.
-> ➗ Focus on specific concepts, such as mathematics.
-> 🔵 Minor variations on the main topics.
 
 ## How to Use
+
+> [!IMPORTANT]
+> Supported on Linux and Windows. For macOS, check the PyTorch install guide.
 
 1. Clone the repository:
    ```
    git clone https://github.com/PilotLeoYan/inside-deep-learning.git
    ```
 2. Create environment: <br>
-  Inside Deep Learning is written in `python=3.14.0`. We recommend using Conda to manage dependencies.
+  Inside Deep Learning is written in `python=3.14`. We recommend using Conda to manage dependencies.
    ```
-   conda create --name idl -y python=3.14.0
+   conda create --name idl -y python=3.14
    conda activate idl
-   pip install --upgrade pip
+   pip3 install --upgrade pip
    cd inside-deep-learning
    ```
 3.
    A. Install dependencies with cuda:
    ```
-   pip install -r requirements-cuda.txt
+   pip3 install -r requirements-cuda.txt
    ```
    B. Install dependencies without cuda:
    ```
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 ## Used Hardware
@@ -74,17 +80,18 @@ This repository is not intended for beginners or LMs lovers. Rather, it is a com
 * GPU: Nvidia Geforce RTX 2070-SUPER (8GB VRAM)
 * RAM: 16GB DDR4
 
-## Contributing
+## Support
 
-If you find this repo useful, please star (★) this repo or cite using the following bibtex entry:
+If you find this repo useful, please consider starring ★ it on Github:
 
-```
-@misc{pilotleoyan25idl,
-  title={Inside-Deep-learning},
-  author={Rivera, Leonardo Fabyan Ortega},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished={\url{https://github.com/PilotLeoYan/inside-deep-learning}},
+If you use this work for something, please cite it using the following BibTeX:
+
+```bibtex
+@software{ortegarivera2025insidedeeplearning,
+  author={Ortega Rivera, Leonardo F.},
+  orcid={0009-0004-0497-2808},
+  title={Inside Deep learning},
+  url={https://github.com/PilotLeoYan/inside-deep-learning},
   year={2025}
 }
 ```
