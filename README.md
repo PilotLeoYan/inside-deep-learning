@@ -52,12 +52,12 @@ for concepts that are often hard to find.
 > Supported on Linux and Windows. For macOS, check the PyTorch install guide.
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/PilotLeoYan/inside-deep-learning.git
    ```
 2. Create environment: <br>
   Inside Deep Learning is written in `python=3.14`. We recommend using Conda to manage dependencies.
-   ```
+   ```bash
    conda create --name idl -y python=3.14
    conda activate idl
    pip3 install --upgrade pip
@@ -65,12 +65,16 @@ for concepts that are often hard to find.
    ```
 3.
    A. Install dependencies with cuda:
-   ```
+   ```bash
    pip3 install -r requirements-cuda.txt
-   ```
+   ```bas
    B. Install dependencies without cuda:
-   ```
+   ```bash
    pip3 install -r requirements.txt
+   ```
+4. Build myst-cli in local:
+   ```bash
+   jupyter book start
    ```
 
 ## Used Hardware
@@ -94,6 +98,8 @@ If you use this work for something, please cite it using the following BibTeX:
   year={2025}
 }
 ```
+
+Find the Draw.io figures used in this repo in [this Drive.](https://drive.google.com/drive/folders/1xBqaZ9ConO4j6sjKsfUxPAkFeuQClTgw?usp=sharing.)
 
 ## Star History
 
