@@ -8,8 +8,7 @@
 
 <p align="center">
 <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="content/figures/idl-logo.png" width="500">
-   <img alt="Inside Deep learning logo" src="content/figures/idl-logo.png" width="500">
+   <img alt="Inside Deep learning logo" src="content/figures/main/logo.png" width="500">
 </picture>
 </p>
 
