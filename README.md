@@ -76,6 +76,10 @@ for concepts that are often hard to find.
    ```bash
    jupyter book start
    ```
+   or also launch JupyterLab with:
+   ```bash
+   jupyter lab
+   ```
 
 ## Used Hardware
 
