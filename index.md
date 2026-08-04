@@ -58,7 +58,6 @@ It is not an isolated discipline, but the architectural core of a nested hierarc
 <div style="text-align: justify">
 Mathematical proofs in academic papers can often feel detached from engineering realities. 
 We believe that clean, readable code is the ultimate validation of theoretical comprehension.
-<br><br>
 Every topic in this collection is approached via three pillars:
 <ol>
   <li><b>The Intuition</b>: Identifying the geometric or statistical problem we aim to solve.</li>
@@ -78,13 +77,13 @@ Every topic in this collection is approached via three pillars:
 </div>
 
 - [Linear Regression Structural Overview](content/1-linear-regression/linear-regression.md)
-- 🤖 [Simple Linear Regressio](content/1-linear-regression/1-1-simple-linear-regression.ipynb) - 
+- 🤖 [Simple Linear Regression](content/1-linear-regression/1-1-simple-linear-regression.ipynb) - 
 Single-variable mapping and Gradient Descent basics.
 - 🤖 [Multivariate Linear Regression](content/1-linear-regression/1-2-multivariate-linear-regression.ipynb) -
 Scaling features up using matrix operations.
 - 🤖 [Multioutput Linear Regression](content/1-linear-regression/1-3-multioutput-linear-regression.ipynb) -
 Simultaneously mapping vectors to vectors.
-- 🤖 [Weight Decay (L2 Regularization)](content/1-linear-regression/1-4-weight-decay.ipynb)
+- 🔵 [L2 Regularization](content/1-linear-regression/1-4-l2-regularization.ipynb) -
 Constraining model complexity via mathematical penalties.
 
 <div style="text-align: justify">
