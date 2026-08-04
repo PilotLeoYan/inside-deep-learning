@@ -36,7 +36,7 @@ for concepts that are often hard to find.
     1. 🤖 [Simple linear regression](content/1-linear-regression/1-1-simple-linear-regression.ipynb)
     2. 🤖 [Multivariate linear regression](content/1-linear-regression/1-2-multivariate-linear-regression.ipynb)
     3. 🤖 [Multivariate linear regression](content/1-linear-regression/1-3-multioutput-linear-regression.ipynb)
-    4. 🤖 [Weight decay (L2 regularization)](content/1-linear-regression/1-4-weight-decay.ipynb)
+    4. 🔵 [L2 regularization](content/1-linear-regression/1-4-l2-regularization.ipynb)
 2. [Classification 📊](content/2-classification/classification.md)
     1. 🤖 [Multiclass classfication](content/2-classification/2-1-multiclass-classification.ipynb)
     + ➗ [Softmax function and its derivative](content/2-classification/softmax-function-and-its-derivative.ipynb)
@@ -75,6 +75,10 @@ for concepts that are often hard to find.
 4. Build myst-cli in local:
    ```bash
    jupyter book start
+   ```
+   or also launch JupyterLab with:
+   ```bash
+   jupyter lab
    ```
 
 ## Used Hardware

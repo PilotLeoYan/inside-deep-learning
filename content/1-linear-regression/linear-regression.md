@@ -1,80 +1,79 @@
-# Linear Regression
+# Linear Regression 📈
 
-## Contents
+As the first chapter of this project, we consider it appropriate to address the problem of **linear regression** using a single neuron, or *perceptron*. Throughout this chapter and the following ones, we will use the term “perceptron” interchangeably with “linear regression” and “linear unit”.
+But why start with linear regression? 
+
+```{figure} ../figures/chapter1/linear-approx.png
+:width: 60%
+:align: center
+```
+
+We start here because it establishes the theoretical framework for our work. Assuming a linear relationship between the variables, we can design the most fundamental model to work with.
+
+$$
+\hat{y} = b + w_{1} x_{1} + w_{2} x_{2}
+$$
+
+We cannot know the true relationship or distribution of the data, but we can make good approximations. 
+
+## Sections
+
+<div style="display: flex; justify-content: center;">
 
 ```mermaid
----
-
----
 flowchart TD
     c1(1.1 - Simple LR)
     c2(1.2 - Multivariate LR)
     c3(1.3 - Multioutput LR)
-    c4(1.4 - Weight decay)
+    c4(1.4 - L2 Regularization)
 
 c1:::model --> c2
 c2:::model --> c3
 c3:::model --> c4:::model
 
-classDef model fill:#1E88E5,stroke:#000,stroke-width:1px
-classDef math fill:#43A047,stroke:#000,stroke-width:1px
+classDef model fill:#1E88E5,color:#FFF,stroke:none,stroke-width:0px
+classDef math fill:#43A047,color:#FFF,stroke:none,stroke-width:0px
 ```
 
-## Introduction
+</div>
 
-In this chapter, we will look at the basic unit for Artificial Neural Networks (ANN), 
-the Perceptron. We will explore and program different versions of the Perceptron from scratch, 
-increasing the complexity of the problem in each part.
+### 1.1 - Simple Linear Regression
 
-In general, the problem to be solved is to approximate the *true function* $f(\cdot)$  that maps the input data to the output data using the linear function $\hat{f}(\cdot)$ estimated based on the *training data*.
+This is the easiest problem to solve in linear regression. We will have a single input feature and a single output feature:
 
-## Parts
+$$
+y = f(x) + \epsilon
+$$
 
-### Simple LR
+This section also establishes key concepts such as *dataset*, *weighted sum as model function*, *loss function*, *gradient descent* and more. These concepts are used in the rest of the project.
 
-This is the easiest problem to solve in linear regression. We will have a single input feature and a single output feature
+### 1.2 - Multivariate Linear Regression
+
+Based on the previous section, 
+we increase the complexity of the problem by increasing the number of input features:
+
+$$
+y = f(\mathbf{x}) + \epsilon
+$$
+
+which makes calculating gradients a little more complicated.
+
+### 1.3 - Multioutput Linear Regression
+
+Finally, the number of output features is increased here:
 
 $$
 \mathbf{y} = f(\mathbf{x}) + \epsilon
 $$
 
-also establish important concepts such as *dataset* (and its partitions) $\mathcal{D}$, 
-*loss function* $L$, 
-use of *gradients* to update parameters, etc.
-
-### Multivariate LR
-
-Based on the previous section, 
-we increase the complexity of the problem by increasing the number of input features
-
-$$
-\mathbf{y} = f(\mathbf{X}) + \epsilon
-$$
-
-which makes calculating gradients a little more complicated.
-
-### Multioutput LR
-
-Finally, the number of output features is increased here
-
-$$
-\mathbf{Y} = f(\mathbf{X}) + \epsilon
-$$
-
 which sets the stage for moving on to the next chapter.
 
-### Weight Decay
+### 1.4 - L2 Regularization
 
-We do not increase the complexity of the problem, 
-but rather introduce new concepts such as *objective function* $J$, *regularization*, etc
-
-$$
-J(\hat{\mathbf{Y}}, \mathbf{\theta}) = 
-L(\hat{\mathbf{Y}}) + \text{regularization}(\theta)
-$$
+In this section, we do not add any further complexity to our model, but we do change the way the model learns (adjusts its parameters). This section introduces the concepts of the *objective function* and *regularization*.
 
 ## Recommendations
 
-We recommend following the chapters in order, because each part uses concepts/formulas from the previous part. So if you get lost because of an assumed topic/formula, it was probably developed earlier.
+We recommend following the chapters in order, because each part uses concepts or formulas from the previous part. If you encounter an unfamiliar concept, it was likely developed earlier in the text.
 
-If you encounter any problems, feel free to send us an email (the address can be found on the home page of this repository) or use the **Issues** button at the top.
+If you encounter any problems, feel free to use the **Issues** button at the top.
