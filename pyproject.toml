@@ -1,0 +1,48 @@
+[project]
+name = "idl"
+version = "0.1.0"
+description = "Inside deep learning, a repository to explain and apply deep learning concepts from scratch."
+authors = [
+    {name = "Leonardo F. Ortega Rivera", email = "leofabyano@gmail.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "autograd>=1.8.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "requests>=2.34.2",
+    "scikit-learn>=1.8.0",
+    "ipykernel>=7.2.0",
+    "jupyter-book>=2.1.5",
+    "jupyter>=1.1.1",
+]
+
+[project.optional-dependencies]
+cpu = ["torch==2.12.0"]
+cuda = ["torch==2.12.0+cu126"]
+
+[tool.uv]
+conflicts = [
+    [
+        {extra = "cpu"},
+        {extra = "cuda"},
+    ],
+]
+
+[tool.uv.sources]
+torch = [
+    {index = "pytorch-cpu", extra = "cpu"},
+    {index = "pytorch-cuda", extra = "cuda"},
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cuda"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
