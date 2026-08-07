@@ -1,6 +1,6 @@
 # This file has been modified, but was initially created automatically with `myst init --gh-pages` 🪄 💚
 # Ensure your GitHub Pages settings for this repository are set to deploy with **GitHub Actions**.
-# ... 
+# ...
 
 name: Build and Deploy Website and PDF
 on:
@@ -32,23 +32,18 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v3
       - uses: typst-community/setup-typst@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
       - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: uv sync --extra cpu
       - name: Build HTML
-        run: jupyter book build --execute --html
-        
+        run: uv run jupyter book build --execute --html
+
       - name: Upload Output HTML as Artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
-      
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-    
