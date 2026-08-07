@@ -1,9 +1,0 @@
-torch==2.12.0
-autograd>=1.8.0
-matplotlib>=3.10.9
-numpy>=2.4.6
-requests>=2.34.2
-scikit-learn>=1.8.0
-ipykernel>=7.2.0
-jupyter-book>=2.1.5
-jupyter>=1.1.1

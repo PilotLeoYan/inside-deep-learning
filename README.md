@@ -54,31 +54,30 @@ for concepts that are often hard to find.
 1. Clone the repository:
    ```bash
    git clone https://github.com/PilotLeoYan/inside-deep-learning.git
-   ```
-2. Create environment: <br>
-  Inside Deep Learning is written in `python=3.14`. We recommend using Conda to manage dependencies.
-   ```bash
-   conda create --name idl -y python=3.14
-   conda activate idl
-   pip3 install --upgrade pip
    cd inside-deep-learning
    ```
-3.
-   A. Install dependencies with cuda:
+2. Install `uv` (if not already installed):
    ```bash
-   pip3 install -r requirements-cuda.txt
-   ```bas
-   B. Install dependencies without cuda:
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+3. Create environment: <br>
+  Inside Deep Learning is written in `python=3.14`. We recommend using `uv` to manage dependencies.
+   
+   A. Install dependencies with **cuda**:
    ```bash
-   pip3 install -r requirements.txt
+   uv sync --extra cuda
+   ```
+   B. Install dependencies **without** cuda:
+   ```bash
+   uv sync --extra cpu
    ```
 4. Build myst-cli in local:
    ```bash
-   jupyter book start
+   uv run jupyter book start
    ```
    or also launch JupyterLab with:
    ```bash
-   jupyter lab
+   uv run jupyter lab
    ```
 
 ## Used Hardware

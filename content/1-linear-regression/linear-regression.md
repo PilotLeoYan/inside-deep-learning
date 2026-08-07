@@ -1,4 +1,4 @@
-# Linear Regression 📈
+# Linear Regression
 
 As the first chapter of this project, we consider it appropriate to address the problem of **linear regression** using a single neuron, or *perceptron*. Throughout this chapter and the following ones, we will use the term “perceptron” interchangeably with “linear regression” and “linear unit”.
 But why start with linear regression? 
