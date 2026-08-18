@@ -63,7 +63,7 @@ project:
 site:
   template: book-theme
   options:
-    favicon: ./content/figures/main/favicon.svg # path to your favicon
+    favicon: favicon.svg # path to your favicon
     style: ./css/custom.css
     logo: ./content/figures/main/logo.png #path to your logo, shown top left at site
     folders: True
