@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   build:
-    name: Check JB compilation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
