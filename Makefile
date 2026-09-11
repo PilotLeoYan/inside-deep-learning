@@ -11,7 +11,7 @@ format:
 
 lint:
 	uv run ruff check . --fix
-	uv run mypy .
+	uv run nbqa mypy .
 
 check:
 	uv run pre-commit run --all-files
