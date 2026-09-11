@@ -17,7 +17,7 @@ repos:
     hooks:
       - id: mypy
         name: mypy
-        entry: uv run nbqa mypy .\content\
+        entry: uv run nbqa mypy
         language: system
         types: [python]
         require_serial: true
