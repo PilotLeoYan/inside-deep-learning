@@ -17,7 +17,14 @@ repos:
     hooks:
       - id: mypy
         name: mypy
-        entry: uv run nbqa mypy
+        entry: uv run mypy
         language: system
         types: [python]
+        require_serial: true
+
+      - id: nbqa-mypy
+        name: nbqa-mypy
+        entry: uv run nbqa mypy
+        language: system
+        types: [jupyter]
         require_serial: true
