@@ -5,7 +5,7 @@ description = "Inside deep learning, a repository to explain and apply deep lear
 authors = [
     {name = "Leonardo F. Ortega Rivera", email = "leofabyano@gmail.com"}
 ]
-license = "MIT"
+license = { text = "MIT" }
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
