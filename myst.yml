@@ -57,7 +57,7 @@ project:
     GH: GitHub
     IDE: Integrated Development Environment
     VSC: Visual Studio Code
-    CLI: commmand line interface
+    CLI: command line interface
 
 
 site:
