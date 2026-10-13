@@ -25,5 +25,11 @@ jobs:
       - name: Install Python dependencies
         run: uv sync --extra cpu
 
+      - name: Run Ruff Lint
+        run: uv run ruff check .
+
+      - name: Run Ruff Format Check
+        run: uv run ruff format --check .
+
       - name: Build HTML
         run: uv run jupyter book build --execute --html
