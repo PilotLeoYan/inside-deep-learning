@@ -3,8 +3,10 @@ Code to generate the example linear regression approximation
 for 'inside-deep-learning/content/1-linear-regression/linear-regression.md'
 """
 
-import numpy as np
+from pathlib import Path
+
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def make_plot() -> None:
@@ -35,7 +37,7 @@ def make_plot() -> None:
         x2,
         y,
         s=60,
-        label="Observed data"
+        label="Observed data",
     )
 
     ax.plot_surface(
@@ -44,7 +46,7 @@ def make_plot() -> None:
         Y_grid,
         alpha=0.35,
         edgecolor="gray",
-        linewidth=0.5
+        linewidth=0.5,
     )
 
     for i in range(len(x1)):
@@ -53,47 +55,52 @@ def make_plot() -> None:
             [x2[i], x2[i]],
             [y[i], y_pred[i]],
             linestyle=":",
-            linewidth=1.5
+            linewidth=1.5,
         )
 
         ax.scatter(
             x1[i],
             x2[i],
             y_pred[i],
-            s=25
+            s=25,
         )
 
     ax.set_xlabel(
         "Independent variable X1",
-        bbox=dict(facecolor="white", edgecolor="none", pad=3)
+        bbox=dict(facecolor="white", edgecolor="none", pad=3),
     )
 
     ax.set_ylabel(
         "Independent variable X2",
-        bbox=dict(facecolor="white", edgecolor="none", pad=3)
+        bbox=dict(facecolor="white", edgecolor="none", pad=3),
     )
 
     ax.set_zlabel(
         "Dependent variable Y",
-        bbox=dict(facecolor="white", edgecolor="none", pad=3)
+        bbox=dict(facecolor="white", edgecolor="none", pad=3),
     )
 
     ax.set_title(
         "Linear Regression: Approximating Data with a Plane",
-        bbox=dict(facecolor="white", edgecolor="none", pad=3)
+        bbox=dict(facecolor="white", edgecolor="none", pad=3),
     )
 
     ax.legend()
 
     plt.tight_layout()
 
+    output_dir = Path(__file__).resolve().parent.parent / "figures" / "chapter1"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / "linear-approx.png"
+
     plt.savefig(
-        "linear-approx.png",
+        output_path,
         transparent=True,
         bbox_inches="tight",
         pad_inches=0.4,
     )
+    plt.close(fig)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     make_plot()
